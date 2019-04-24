@@ -38,7 +38,6 @@ import Scroll from 'base/scroll'
 import { getData } from 'common/js/dom'
 
 const ANCHOR_HEIGHT = 20
-// const TITLE_HEIGHT = 30
 
 export default {
   props: {
@@ -79,6 +78,7 @@ export default {
     onShortcutMove (e) {
       let firshTouch = e.touches[0]
       this.touch.y2 = firshTouch.pageY
+      // 求整数简便写法
       let delta = (this.touch.y2 - this.touch.y1) / ANCHOR_HEIGHT | 0
       let anchorIndex = parseInt(this.touch.anchorIndex) + delta
       this._scrollTo(anchorIndex)

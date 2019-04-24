@@ -193,7 +193,6 @@ export default {
       } else {
         this.currentShow = 'cd'
       }
-      // console.log(this.currentShow)
     },
     getFavoriteIcon (song) {
       if (this.isFavorite(song)) {
@@ -349,11 +348,10 @@ export default {
         this.currentLyric = null
       }
       this.noLyric = false
-      getLyric(id).then((res) => {
+      getLyric(id).then(res => {
         this.currentLyric = new Lyric(res.data.lrc.lyric, this.handleLyric)
         if (this.playing) {
           this.currentLyric.play()
-          // 歌词重载以后 高亮行设置为 0
           this.currentLineNum = 0
           this.$refs.lyricList.scrollTo(0, 0, 1000)
         }

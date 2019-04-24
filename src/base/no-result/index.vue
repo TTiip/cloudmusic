@@ -3,7 +3,7 @@
     <div class="no-result-icon">
       <i class="fa fa-music"></i>
     </div>
-    <p class="no-result-text">{{title}}</p>
+    <p class="no-result-text">{{ title }}</p>
   </div>
 </template>
 

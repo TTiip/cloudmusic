@@ -34,13 +34,11 @@ export default {
   },
   methods: {
     progressClick (e) {
-      // 这个有 bug
-      // this._offset(e.offsetX)
+      // getBoundingClientRect获取距离宽高等
       const rect = this.$refs.progressBar.getBoundingClientRect()
       // rect.left 元素距离左边的距离
       // e.pageX 点击距离左边的距离
       const offsetWidth = e.pageX - rect.left
-      // console.log(rect, e.pageX)
       this._offset(offsetWidth)
       const barWidth = this.$refs.progressBar.clientWidth - progressBtnWidth
       const percent = this.$refs.progress.clientWidth / barWidth

@@ -3,7 +3,7 @@
     <div class="music-list">
       <div class="header" ref="header">
         <div class="back" @click="back">
-          <i class="iconfont">&#xe60b;</i>
+          <i class="iconfont icon-shanchu"></i>
         </div>
         <div class="text">
           <h1 class="title">{{ headerTitle }}</h1>
@@ -28,7 +28,7 @@
           </div>
           <div class="song-list-wrapper">
             <div class="sequence-play" v-show="listDetail.length" @click="sequence">
-              <i class="iconfont">&#xe60e;</i>
+              <i class="iconfont icon-zanting"></i>
               <span class="text">播放全部</span>
               <span class="count">(共{{ listDetail.length }}首)</span>
             </div>
