@@ -4,7 +4,9 @@
       <ComHeader></ComHeader>
       <ComTab></ComTab>
     </div>
-    <router-view/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
     <Player></Player>
   </div>
 </template>

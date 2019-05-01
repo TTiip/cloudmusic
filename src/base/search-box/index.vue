@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { debounce } from 'common/js/utl'
+import { debounce } from 'common/js/util'
 
 export default {
   props: {

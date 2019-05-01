@@ -99,7 +99,7 @@ import Playlist from 'components/PlayList'
 import { mapGetters, mapMutations, mapActions } from 'vuex'
 import { getSong, getLyric } from 'api/song'
 import { playMode } from 'common/js/config'
-import { shuffle } from 'common/js/utl'
+import { shuffle } from 'common/js/util'
 
 export default {
   data () {

@@ -42,7 +42,7 @@ import Scroll from 'base/scroll'
 import Confirm from 'base/confirm'
 import { mapActions, mapGetters, mapMutations } from 'vuex'
 import { playMode } from 'common/js/config'
-import { shuffle } from 'common/js/utl'
+import { shuffle } from 'common/js/util'
 
 export default {
   name: 'PlayList',
